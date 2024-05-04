@@ -1,0 +1,77 @@
+@keyframes breath {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+    transform: scale(120%);
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+@keyframes openAnime {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.skills {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 2px solid #6ea3e0;
+  overflow: visible;
+}
+
+.headerSkills {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(193, 177, 207);
+  gap: 1rem;
+  font-size: 24px;
+  cursor: pointer;
+}
+.headerSkills span {
+  cursor: pointer;
+}
+
+.headerSkills:hover {
+  color: white;
+}
+
+.skillSection {
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+  transition: all 0.3s;
+}
+
+.skill {
+  border-radius: 5px;
+  background-color: rgb(37, 37, 37);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+.skill span {
+  width: fit-content;
+  font-weight: 500;
+  color: rgb(212, 212, 212);
+  font-size: 16px;
+}
+
+.skillIcon {
+  width: 36px;
+  height: 36px;
+}
+
+/*# sourceMappingURL=skills.css.map */

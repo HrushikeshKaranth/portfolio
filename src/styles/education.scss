@@ -1,0 +1,101 @@
+@import '../styles/variables/Variables.scss';
+
+@mixin flexEnd($v: flex-end, $h: center) {
+    display: flex;
+    align-items: $v;
+    justify-content: $h;
+}
+
+@keyframes openAnime {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes openAnimeHeight {
+    0%{
+        transform:scaleY(0%);
+    }
+    100%{
+        transform: scaleY(100%);
+    }
+}
+
+.icon{
+    transition: all .3s;
+}
+.education{
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 2px solid $textColor2;
+    // border-bottom: 3px solid $gGreen;
+}
+.educationcard{
+    // border: 2px solid $trenaryColor;
+    width: 48.9%;
+    @include flexEnd($v: flex-start, $h: flex-start);
+    flex-wrap: wrap;
+    background-color: $secondaryColor;
+    border-radius: 5px;
+    flex-direction: column;
+    padding: 1rem;
+    position: relative;
+    animation: openAnime .3s;
+    transition: all .3s;
+    ul{
+        @include flexEnd($v: flex-start, $h: flex-start);
+        flex-direction: column;
+        padding-left: 1rem;
+    }
+    .websiteUrl{
+        // border: 2px solid $textColor1;
+        background-color: $primaryColor;
+        border-radius: 50%;
+        position: absolute;
+        top: .7rem;
+        right: .7rem;
+        a{
+            @include flexEnd($v: center, $h: center);
+            padding: .5rem;
+            text-decoration: none;
+            color: $textColor3;
+            .icon{
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+}
+.headerEducation{
+    font-size: 24px;
+    cursor: pointer;
+    color: $trenaryColor;
+    width: 100%;
+    @include flexEnd($v: center, $h: space-between);
+    gap: 1rem;
+    span{
+        cursor: pointer;
+    }
+}
+.headerEducation:hover{
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .hide{
+        display: none;
+    }
+    .educationcard{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 425px) {
+    .hide{
+        display: none;
+    }
+    .educationcard{
+        width: 100%;
+    }
+}

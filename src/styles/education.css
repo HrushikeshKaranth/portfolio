@@ -1,0 +1,103 @@
+@keyframes openAnime {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes openAnimeHeight {
+  0% {
+    transform: scaleY(0%);
+  }
+  100% {
+    transform: scaleY(100%);
+  }
+}
+.icon {
+  transition: all 0.3s;
+}
+
+.education {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 2px solid #6ea3e0;
+}
+
+.educationcard {
+  width: 48.9%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  background-color: rgb(37, 37, 37);
+  border-radius: 5px;
+  flex-direction: column;
+  padding: 1rem;
+  position: relative;
+  animation: openAnime 0.3s;
+  transition: all 0.3s;
+}
+.educationcard ul {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding-left: 1rem;
+}
+.educationcard .websiteUrl {
+  background-color: rgb(48, 48, 48);
+  border-radius: 50%;
+  position: absolute;
+  top: 0.7rem;
+  right: 0.7rem;
+}
+.educationcard .websiteUrl a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  text-decoration: none;
+  color: rgb(228, 131, 149);
+}
+.educationcard .websiteUrl a .icon {
+  width: 24px;
+  height: 24px;
+}
+
+.headerEducation {
+  font-size: 24px;
+  cursor: pointer;
+  color: rgb(193, 177, 207);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.headerEducation span {
+  cursor: pointer;
+}
+
+.headerEducation:hover {
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .hide {
+    display: none;
+  }
+  .educationcard {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .hide {
+    display: none;
+  }
+  .educationcard {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=education.css.map */

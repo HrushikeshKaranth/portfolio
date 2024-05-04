@@ -1,0 +1,55 @@
+@import '../styles/variables/Variables.scss';
+
+@mixin flexEnd($v: flex-end, $h: center) {
+    display: flex;
+    align-items: $v;
+    justify-content: $h;
+}
+@keyframes breath {
+    0%{
+        opacity: 0.2;
+    }
+    50%{
+        opacity: 1;
+        transform: scale(120%);
+    }
+    100%{
+        opacity: 0.2;
+    }
+}
+
+@keyframes openAnime {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.projects{
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 2px solid $textColor2;
+}
+.headerProject{
+    font-size: 24px;
+    cursor: pointer;
+    color: $trenaryColor;
+    width: 100%;
+    @include flexEnd($v: center, $h: space-between);
+    gap: 1rem;
+    span{
+        cursor: pointer;
+    }
+}
+.headerProject:hover{
+    color: white;
+}
+.screenshot{
+    width: 100%;
+    img{
+        width: 50%;
+        height: 18vw;
+        border: 5px solid $primaryColor;
+    }
+}

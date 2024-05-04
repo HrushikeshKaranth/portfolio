@@ -1,0 +1,73 @@
+@import '../styles/variables/Variables.scss';
+
+@mixin flexEnd($v: flex-end, $h: center) {
+    display: flex;
+    align-items: $v;
+    justify-content: $h;
+}
+@keyframes breath {
+    0%{
+        opacity: 0.2;
+    }
+    50%{
+        opacity: 1;
+        transform: scale(120%);
+    }
+    100%{
+        opacity: 0.2;
+    }
+}
+
+@keyframes openAnime {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.skills{
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 2px solid $textColor2;
+    overflow: visible;
+}
+.headerSkills{
+    @include flexEnd($v: center, $h: space-between);
+    color: $trenaryColor;
+    gap: 1rem;
+    font-size: 24px;
+    cursor: pointer;
+    span{
+        cursor: pointer;
+    }
+}
+.headerSkills:hover{
+    color: white;
+}
+.skillSection{
+    margin-top: 1rem;
+    width: 100%;
+    @include flexEnd($v: flex-start, $h: flex-start);
+    gap: 1rem;
+    flex-wrap: wrap;
+    transition: all .3s;
+}
+.skill{
+    border-radius: 5px;
+    background-color: $secondaryColor;
+    @include flexEnd($v: center, $h: flex-start);
+    gap: 1rem;
+    padding: .5rem;
+    span{
+        width: fit-content;
+        font-weight: 500;
+        color: $textColor1;
+        font-size: 16px;
+    }
+}
+.skillIcon{
+    width: 36px;
+    height: 36px;
+}

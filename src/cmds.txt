@@ -1,0 +1,1 @@
+sass --watch intro.scss:intro.css education.scss:education.css workExperience.scss:workExperience.css projects.scss:projects.css skills.scss:skills.css

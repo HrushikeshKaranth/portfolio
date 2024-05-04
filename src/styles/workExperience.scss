@@ -1,0 +1,195 @@
+@import '../styles/variables/Variables.scss';
+
+@mixin flexEnd($v: flex-end, $h: center) {
+    display: flex;
+    align-items: $v;
+    justify-content: $h;
+}
+@keyframes breath {
+    0%{
+        opacity: 0.2;
+    }
+    50%{
+        opacity: 1;
+        transform: scale(120%);
+    }
+    100%{
+        opacity: 0.2;
+    }
+}
+
+@keyframes openAnime {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.workExperience{
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 2px solid $textColor2;
+}
+.header{
+    font-size: 24px;
+    cursor: pointer;
+    color: $trenaryColor;
+    width: 100%;
+    @include flexEnd($v: center, $h: space-between);
+    gap: 1rem;
+    transition: all .3s;
+    span{
+        cursor: pointer;
+    }
+}
+.header:hover{
+    color: white;
+}
+.companies{
+    margin-top: 1rem;
+    width: 100%;
+    @include flexEnd($v: flex-start, $h: space-between);
+    gap: 1rem;
+    flex-wrap: wrap;
+    transition: all .3s;
+}
+.company{
+    // border: 2px solid $gGreen;
+    animation: openAnime .3s;
+    width: 48.9%;
+    @include flexEnd($v: flex-start, $h: flex-start);
+    flex-wrap: wrap;
+    background-color: $secondaryColor;
+    border-radius: 5px;
+    flex-direction: column;
+    padding: 1rem;
+    transition: all .3s;
+    position: relative;
+    ul{
+        @include flexEnd($v: flex-start, $h: flex-start);
+        flex-direction: column;
+        padding-left: 1rem;
+    }
+    .websiteUrl{
+        // border: 2px solid $textColor1;
+        background-color: $primaryColor;
+        border-radius: 50%;
+        position: absolute;
+        top: .7rem;
+        right: .7rem;
+        a{
+            @include flexEnd($v: center, $h: center);
+            padding: .5rem;
+            text-decoration: none;
+            color: $textColor3;
+            .icon{
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+}
+.companyName{
+    @include flexEnd($v: none, $h: none);
+    flex-direction: column;
+    margin-bottom: 1rem;
+    a{
+        text-decoration: none;
+        color: $textColor2;
+    }
+    span{
+        @include flexEnd($v: center, $h: flex-start);
+        gap: 1rem;
+        font-size: 24px;
+        font-weight: 500;
+        color: $textColor2;
+        .icon{
+            @include flexEnd($v: center, $h: center);
+            width: 24px;
+            height: 24px;
+        }
+    }
+    div{
+        @include flexEnd($v: center, $h: flex-start);
+        gap: .5rem;
+        font-size: 14px;
+        font-weight: 300;
+        color: $textColor2;
+        a{
+            @include flexEnd($v: flex-start, $h: flex-start);
+            gap: .3rem;
+            line-height: 1rem;
+            .locicon{
+                width: 12px;
+                height: 12px;
+                color: $textColor3;
+                animation: breath 2.5s infinite;
+            }
+        }
+    }
+}
+.companyLogo{
+    background-color: $secondaryColor;
+    margin-bottom: 1rem;
+    img{
+        background-color: $secondaryColor;
+        // width: 50px;
+        height: 50px;
+    }
+}
+.fromAndTo{
+    margin-bottom: 1rem;
+    @include flexEnd($v: center, $h: center);
+    gap: .5rem;
+    // color: $gYellow;
+    font-size: 14px;
+}
+.jobTitle{
+    background-color: $primaryColor;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    color: $textColor2;
+    font-size: 20px;
+    font-weight: 500;
+}
+.description{
+    margin-top: 1rem;
+    color: $textColor1;
+    span{
+        font-size: 16px;
+        font-weight: 400;
+    }
+    ul{
+        font-size: 14px;
+        font-weight: 300;
+        list-style-type:circle;
+    }
+}
+.breath{
+    width: 20px;
+    height: 20px;
+    color: $textColor3;
+    // animation: breath 2.5s infinite;
+}
+@media screen and (max-width: 768px) {
+    .hide{
+        display: none;
+    }
+    .company{
+        width: 100%;
+    }
+    .scrollButton{
+        width: 45px;
+        height: 45px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .hide{
+        display: none;
+    }
+    .company{
+        width: 100%;
+    }
+}
