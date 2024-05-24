@@ -2,25 +2,6 @@
     "data": [
         {
             "id": 1,
-            "companyName": "Religh Technologies Pvt. Ltd",
-            "address": "Bengaluru, Karnataka, India",
-            "from": "01/2023",
-            "to": "06/2023",
-            "workTime": "Full Time",
-            "jobTitle": "Full Stack Developer",
-            "tasks": [
-                "Understand client requirements and execute on design.",
-                "Adhere to key design principles.",
-                "Co-ordinate with the team and build reusable code.",
-                "Skills: React JS, Javascript, Java, Spring Boot, MySQL, MongoDB, NodeJS, Flask, REST API, Python, CSS3, HTML5, GitHub"
-            ],
-            "locationUrl": "https://www.google.com/maps/dir//No+B-4,+4th+floor,+25%2F3-39,+Rathod+Landmark,+next+to+Rathod+BuildMart,+1st+Stage,+Yeshwanthpur+Industrial+Suburb,+Yeswanthpur,+Bengaluru,+Karnataka+560022/@13.0154611,77.5511386,18z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bae3de1acf267c1:0xa2aeb972709a94b4!2m2!1d77.5512664!2d13.0149384?entry=ttu",
-            "website": "https://www.relightechnologies.com/",
-            "linkedin": "https://www.linkedin.com/company/religh-technologies/",
-            "logo": "Religh-Logo.png"
-        },
-        {
-            "id": 2,
             "companyName": "CODEPROOFS PVT LTD",
             "address": "Bengaluru, Karnataka, India",
             "from": "01/2021",
@@ -364,7 +345,7 @@
                     "icon": "logos:git-icon"
                 },
                 {
-                    "id":2,
+                    "id": 2,
                     "name": "GitHub",
                     "icon": "mdi:github"
                 },
@@ -381,11 +362,41 @@
                     "icon": "skill-icons:docker"
                 },
                 {
-                    "id":2,
+                    "id": 2,
                     "name": "Kubernetes",
                     "icon": "skill-icons:kubernetes"
                 }
+            ],
+            "iaas": [
+                {
+                    "id": 1,
+                    "name": "Terraform",
+                    "icon": "skill-icons:terraform-light"
+                }
             ]
+        }
+    ],
+    "extra": [
+        {
+            "extras": {
+                "id": 1,
+                "companyName": "Religh Technologies Pvt. Ltd",
+                "address": "Bengaluru, Karnataka, India",
+                "from": "01/2023",
+                "to": "06/2023",
+                "workTime": "Full Time",
+                "jobTitle": "Full Stack Developer",
+                "tasks": [
+                    "Understand client requirements and execute on design.",
+                    "Adhere to key design principles.",
+                    "Co-ordinate with the team and build reusable code.",
+                    "Skills: React JS, Javascript, Java, Spring Boot, MySQL, MongoDB, NodeJS, Flask, REST API, Python, CSS3, HTML5, GitHub"
+                ],
+                "locationUrl": "https://www.google.com/maps/dir//No+B-4,+4th+floor,+25%2F3-39,+Rathod+Landmark,+next+to+Rathod+BuildMart,+1st+Stage,+Yeshwanthpur+Industrial+Suburb,+Yeswanthpur,+Bengaluru,+Karnataka+560022/@13.0154611,77.5511386,18z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bae3de1acf267c1:0xa2aeb972709a94b4!2m2!1d77.5512664!2d13.0149384?entry=ttu",
+                "website": "https://www.relightechnologies.com/",
+                "linkedin": "https://www.linkedin.com/company/religh-technologies/",
+                "logo": "Religh-Logo.png"
+            }
         }
     ]
 }

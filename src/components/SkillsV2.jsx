@@ -185,6 +185,20 @@ function SkillsV2() {
                     })
                 }
             </div>
+            <br />
+            <span><b>Infrastructure as a Code:</b></span>
+            <div className='skillSection' style={showSkills ? { display: 'flex' } : { display: 'none' }}>
+                {
+                    data[0].iaas.map((data) => {
+                        return (
+                            <div className='skill'>
+                                {data.icon ? <Icon className='skillIcon' icon={data.icon} /> : <Icon className='skillIcon' icon="ph:wifi-none-thin" />}
+                                <span>{data.name}</span>
+                            </div>
+                        )
+                    })
+                }
+            </div>
         </>
     )
 }

@@ -22,7 +22,7 @@ function IntroSection() {
                 </div>
             </div>
             <p className='bio'>
-                - A Creative Developer, Fast learner, Consistent worker with around 2 years of
+                - A Creative Engineer, Fast learner, Consistent worker with around 2 years of
                 experience 😇 in Software Engineering.<br />
                 - My objective is to be a part of an organization where I can utilize my knowledge and skills and at the same time enhance my knowledge and skills as per the requirement of the organization and also develop managerial and interpersonal skills. I will put my full effort to lead the company in a successful path.
             </p>
